@@ -1,8 +1,14 @@
-import React from 'react'
+import React, {useState} from 'react';
+import Backdrop from './Backdrop';
+import Moadal from './Moadal';
 
 const Todo = (props) => {
+    const [deleteTodo, setdeleteTodo] = useState(false);
     const dedleteHandler = () => {
-        console.log(props.text);
+        setdeleteTodo(true);
+    }
+    const closeModalHandler = () => {
+        setdeleteTodo(false);
     }
     return (
         <div className="card">
@@ -10,6 +16,8 @@ const Todo = (props) => {
             <div className="actions">
                 <button className="btn" onClick={dedleteHandler}>Delete</button>
             </div>
+           {deleteTodo && <Moadal  onClick={closeModalHandler} />}
+            {deleteTodo && <Backdrop  onClick={closeModalHandler}/>}
         </div>
     );
 }
