@@ -4,8 +4,9 @@ import classes from'./Navigation.module.css';
 
 const Navigation = () => {
     return (
-        <header>
-            <div>
+        <header className={classes.header}>
+            <div className={classes.logo}>Logo</div>
+            <nav>
                 <ul>
                     <li>
                         <Link to="/">All Meetups</Link>
@@ -17,7 +18,7 @@ const Navigation = () => {
                         <Link to="/favorites">Favorites</Link>
                     </li>
                 </ul>
-            </div>
+            </nav>
         </header>
     )
 }
