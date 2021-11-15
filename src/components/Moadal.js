@@ -5,7 +5,7 @@ const Moadal = (props) => {
         <div className="modal">
             <p>Are you sure?</p>
             <button className="btn btn--alt" onClick={props.onClick}>Cancel</button>
-            <button className="btn">Comfirm</button>
+            <button className="btn" onClick={props.onClick}>Comfirm</button>
         </div>
     )
 }
