@@ -1,4 +1,5 @@
 import React from 'react';
+import MeetupsList from '../components/meetups/MeetupsList';
 
 const DUMMY_DATA = [
     {
@@ -24,7 +25,7 @@ const DUMMY_DATA = [
 const AllMeetups = () => {
     return (
         <div>
-            All Meetups
+            <MeetupsList meetups={DUMMY_DATA} />
         </div>
     )
 }
