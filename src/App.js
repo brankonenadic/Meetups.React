@@ -3,7 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import AllMeetups from "./pages/AllMeetups";
 import Favorites from "./pages/Favorites";
 import NewMeetup from "./pages/NewMeetup";
-import Navigation from './layout/Navigation';
+import Navigation from './components/layout/Navigation';
 
 function App() {
   return <div>
