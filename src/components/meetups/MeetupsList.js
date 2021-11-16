@@ -1,10 +1,16 @@
 import React from 'react';
 
-const MeetupsList = () => {
+const MeetupsList = (props) => {
     return (
-        <div>
-            
-        </div>
+        <li>
+            <div>
+                <img src={props.image} alt={props.title} />
+            </div>
+            <div>
+                <h2>{props.title}</h2>
+                <address>{props.address}</address>
+            </div>
+        </li>
     )
 }
 
