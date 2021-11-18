@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
+import NewMeetupForm from '../components/meetups/NewMeetupForm';
 
 const NewMeetup = () => {
     return (
         <section>
-            New Meetup
+            <h1>New Meetup</h1>
+            <NewMeetupForm />
         </section>
     )
 }
