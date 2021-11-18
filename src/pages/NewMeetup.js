@@ -2,9 +2,9 @@ import React from 'react'
 
 const NewMeetup = () => {
     return (
-        <div>
+        <section>
             New Meetup
-        </div>
+        </section>
     )
 }
 
