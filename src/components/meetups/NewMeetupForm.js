@@ -11,7 +11,7 @@ const NewMeetupForm = () => {
                     <input type="text" id="title" required />
                 </div>
                 <div className={classes.control}>
-                    <label htmlFor="image">Image</label>
+                    <label htmlFor="image">Meetup Image</label>
                     <input type="url" id="image" required />
                 </div>
                 <div className={classes.control}>
