@@ -1,12 +1,13 @@
 import React from 'react';
 import classes from './NewMeetupForm.module.css';
+import Card from '../ui/Card';
 
 const NewMeetupForm = () => {
     return (
-        <div>
-            
-        </div>
-    )
+        <Card>
+
+        </Card>
+    );
 }
 
 export default NewMeetupForm
