@@ -11,13 +11,15 @@ const NewMeetupForm = () => {
 
     const submitHandler = (e) => {
         e.preventDefault();
-        const enteredTitle = titleRef.current.value;
-        const enteredImage = imageRef.current.value;
-        const enteredAddress = addressRef.current.value;
-        const enteredDescription = descriptionRef.current.value;
 
-        console.log(enteredTitle ,enteredImage , enteredAddress ,enteredDescription);
+        const meetupData = {
+            title: titleRef.current.value,
+            image:imageRef.current.value,
+            address: addressRef.current.value,
+            description: descriptionRef.current.value};
 
+        console.log(meetupData);
+       
     }
     return (
         <Card>
