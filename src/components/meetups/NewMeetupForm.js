@@ -3,9 +3,13 @@ import classes from './NewMeetupForm.module.css';
 import Card from '../ui/Card';
 
 const NewMeetupForm = () => {
+    const submitHandler = (e) => {
+        e.preventDefault();
+        
+    }
     return (
         <Card>
-            <form className={classes.form}>
+            <form className={classes.form} onSubmit={submitHandler}>
                 <div className={classes.control}>
                     <label htmlFor="title">Meetup Title</label>
                     <input type="text" id="title" required />
