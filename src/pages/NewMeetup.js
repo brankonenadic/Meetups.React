@@ -2,10 +2,17 @@ import React from 'react';
 import NewMeetupForm from '../components/meetups/NewMeetupForm';
 
 const NewMeetup = () => {
+    const addMeetupHandler = (meetupData) => {
+        fetch('https://meetups-b5772-default-rtdb.europe-west1.firebasedatabase.app/meetups.json', 
+        {
+            method: 'POST',
+            
+        })
+    }
     return (
         <section>
             <h1>New Meetup</h1>
-            <NewMeetupForm />
+            <NewMeetupForm onAddMeetup={addMeetupHandler}/>
         </section>
     )
 }
