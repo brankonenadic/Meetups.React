@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React, { useRef } from 'react';
 import classes from './NewMeetupForm.module.css';
 import Card from '../ui/Card';
 
@@ -14,12 +14,12 @@ const NewMeetupForm = (props) => {
 
         const meetupData = {
             title: titleRef.current.value,
-            image:imageRef.current.value,
+            image: imageRef.current.value,
             address: addressRef.current.value,
             description: descriptionRef.current.value
         };
 
-          props.onAddMeetup(meetupData);     
+        props.onAddMeetup(meetupData);
     }
     return (
         <Card>
