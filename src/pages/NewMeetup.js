@@ -14,7 +14,9 @@ const history = useHistory();
                 headers: {
                     'Content-Type': 'application/json'
                 }
-            })
+            }).then(() => {
+                history.replace('/');
+            });
     }
     return (
         <section>
