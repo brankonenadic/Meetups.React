@@ -21,7 +21,7 @@ const DUMMY_DATA = [
       'This is a first, amazing meetup which you definitely should not miss. It will be a lot of fun!',
   },
 ];
-
+[]
 const AllMeetups = () => {
   return (
     <div>
