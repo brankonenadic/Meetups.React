@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import MeetupsList from '../components/meetups/MeetupsList';
 
 const DUMMY_DATA = [
@@ -21,8 +21,17 @@ const DUMMY_DATA = [
       'This is a first, amazing meetup which you definitely should not miss. It will be a lot of fun!',
   },
 ];
-[]
+
 const AllMeetups = () => {
+  const [isLoading, setisLoading] = useState(true);
+  const [loadedData, setloadedData] = useState([]);
+
+  fetch('https://meetups-b5772-default-rtdb.europe-west1.firebasedatabase.app/meetups.json').then((response) => {
+    response.json();
+  }).then((data) => {
+    setisLoading(false);
+  });
+
   return (
     <div>
       <MeetupsList meetups={DUMMY_DATA} />
