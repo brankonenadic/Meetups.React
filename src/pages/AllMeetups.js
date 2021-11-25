@@ -2,11 +2,9 @@ import React, { useState, useEffect } from 'react';
 import MeetupsList from '../components/meetups/MeetupsList';
 
 
-
 const AllMeetups = () => {
   const [isLoading, setisLoading] = useState(true);
   const [loadedData, setloadedData] = useState([]);
-
 
   useEffect(() => {
     setisLoading(true);
@@ -22,12 +20,10 @@ const AllMeetups = () => {
         };
         meetups.push(meetup);
       }
-
       setisLoading(false);
       setloadedData(meetups);
     });
   }, []);
-
 
   if (isLoading) {
     return (
