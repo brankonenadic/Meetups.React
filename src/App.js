@@ -10,19 +10,19 @@ import NewMeetup from "./pages/NewMeetup";
 function App() {
   return (
     <Fragment>
-    <Layout>
-      <Switch>
-        <Route path="/" exact>
-          <AllMeetups />
-        </Route>
-        <Route path="/new-meetups">
-          <NewMeetup />
-        </Route>
-        <Route path="/favorites">
-          <Favorites />
-        </Route>
-      </Switch>
-    </Layout>
+      <Layout>
+        <Switch>
+          <Route path="/" exact>
+            <AllMeetups />
+          </Route>
+          <Route path="/new-meetups">
+            <NewMeetup />
+          </Route>
+          <Route path="/favorites">
+            <Favorites />
+          </Route>
+        </Switch>
+      </Layout>
     </Fragment>
   );
 }
