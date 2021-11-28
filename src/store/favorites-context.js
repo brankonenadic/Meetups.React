@@ -6,11 +6,13 @@ const FavoriteContext = createContext({
     totalFavorites: 0
 });
 
-const FavoritesContextProvider = () => {
+const FavoritesContextProvider = (props) => {
+const context = {};
+
     return (
-        <div>
-            
-        </div>
+        <FavoriteContext.Provider value={context}>
+            {props.children}
+        </FavoriteContext.Provider>
     )
 }
 
