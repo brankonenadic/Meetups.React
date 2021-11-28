@@ -8,7 +8,10 @@ const FavoriteContext = createContext({
 
 const FavoritesContextProvider = (props) => {
     const [userFavorites, setUserFavorites] = useState([]);
-    const context = {};
+    const context = {
+        favorites: userFavorites,
+        totalFavorites: userFavorites.length
+    };
 
     return (
         <FavoriteContext.Provider value={context}>
