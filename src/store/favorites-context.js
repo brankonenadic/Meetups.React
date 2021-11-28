@@ -1,4 +1,4 @@
-import { createContext } from "react";
+import { createContext, useState } from "react";
 
 
 const FavoriteContext = createContext({
@@ -7,7 +7,8 @@ const FavoriteContext = createContext({
 });
 
 const FavoritesContextProvider = (props) => {
-const context = {};
+    const [userFavorites, setUserFavorites] = useState([]);
+    const context = {};
 
     return (
         <FavoriteContext.Provider value={context}>
