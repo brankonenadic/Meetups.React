@@ -15,12 +15,14 @@ const FavoritesContextProvider = (props) => {
         });
     };
 
-    const removeFavoritesHandler = () => {
-
+    const removeFavoritesHandler = (meetupId) => {
+        setUserFavorites((prevUserFavorites) => {
+            return prevUserFavorites.filter(meetup => meetup.id !== meetupId);
+        });
     };
 
     const itemIsFavoriteHandler = () => {
-
+        return userFavorites.some(meetup => meetup.id === meetupId);
     };
 
     const context = {
